@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@1,300&family=Rajdhani:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@1,300&family=Rajdhani:wght@600&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page{
+    height: 100%;
+    width: 100%;
+    background-color: #0A7029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head{
+    margin-top: 20px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 15px;
+    color: #FEDE00;
+    
+}
+/*text selector is parent of both title and data */
+.text{
+    border-bottom: 2px solid white;
+    width: 200px;
+    height: 100px;
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 10px;
+
+}
+.date{
+    margin-right: 15px;
+    color: #DBE8D8;
+    
+}
+
+/*but selector is parent of button element which is present in the but container  */
+.but{
+    width: 50px;
+    height: 32px;
+   
+    text-align: center;
+    margin-left: 70px;
+}
+
+.but button{
+    background-color: transparent;
+    
+    border: 0px;
+    font-size: 30px;
+    width: 70px;
+    height: 67px;
+}
+/*This football-icon id for accessing the icon which present on the button */
+#football-icon{
+    width: 30px;
+    height: 45px;
+}
+
+/* these gif,quote,videos,photo containers have image , gif, photos*/
+.gif{
+    width:190px;
+    height: 260px;
+    border: 5px solid #0A7029;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.quote{
+    width: 393px;
+    height: 174px;
+    border: 5px solid #0A7029;
+    position: absolute;
+    top: 17%;
+    left: 32.5%;
+    margin-left: 10px;
+    margin-bottom: 110px;
+    border-radius: 8px;
+    
+}
+.videos{
+    width: 100%;
+    height: 40%;
+    border: 5px solid #0A7029;
+    position: absolute;
+    bottom: 2%;
+    border-radius: 8px;
+}
+.photo{
+    width: 280px;
+    height: 100%;
+    
+    border-radius: 5px;
+}
+/*colab-container is parent of  gif-qoute and img-con*/
+.colab-container{
+    display: grid;
+    width: 920px;
+    height:59%;
+    background-color: #FEDE00;
+    border: 5px green;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    border-radius: 5px;
+    
+   
+    
+
+}
+/*gif-qoute is parent of gif,videos,quote container */
+.gif-qoute{
+    width: 600px;
+    height: auto;
+    
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: relative;
+    column-gap: 10px;
+}
+/*img-con is parent of the large photo in colab-container */
+.img-con{
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    height: 95%;
+   
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*bio(biography) is parent of both title-con and para-con */
+.bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 35%;
+    height: 52%;
+    border-bottom: 5px solid #FEDE00;
+}
+.title-con{
+    margin-left: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 20%;
+    
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-size: 1.3rem;
+color: #DBE8D8;
+}
+/*para-con container contains the paragraph */
+.para-con{
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-size: 1.3rem;
+font-weight: 400;
+padding: 5%;
+line-height: 1.5;
+color: #C8DF52;
+}
+
+/*phto selector for accessing the image which presented in the photo container */
+.phto{
+    width: 280px;
+    height: calc(100% - 0px);
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+/*video selector for accessing the video which presented in the videos container */
+video{
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    
+    
+}
+/*quote-photo selector for accessing the image which presented in the quote container */
+.quote-photo{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0px;
+    border-radius: 3px;
+}
+/*gif-picture selector selector for accessing the gif which presented in the gif container */
+.gif-picture{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+/*author container which consist of the footer content */
+.author{
+    width: 100%;
+    height: 100%;
+    
+    font-size: 1.6rem;
+    color: #FEDE00;
+}
+a{
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+color: #FEDE00;
+
+}
+#linkedin-icon{
+    width: 30px;
+    height: 45px;
+}
